@@ -1,23 +1,5 @@
-# Patl
-==========
-
-Patl is a Python package which helps you in creating a monitorable structure 
-for your files and folder for your next big project.
-
-## Installing
-==============
-
-Install and update using `pip`:
-
-```cmd
-
-    > pip install patl
-
-```
-
-
-## A Simple Example
-=====================
+# Simple Usage
+====
 
 In order to use patl you first have to create a patl.json file in your project's root area.
 
@@ -28,7 +10,7 @@ follow a certain kind of rules in order to structure our project.
 - Each file and folder's name must be as key holder.
 
 - Each file's value must be null to recognize it as a file.
-
+``` json
 e.g: 
     { "index.js" : null }
 
@@ -46,26 +28,16 @@ e.g:
 After constructing your structure in patl.json file you have to open your terminal and 
 change your current working directory to folder where patl.json file is located.
 
-### To Create Project Layout
-=============================
-
+## To Create Project Layout
+===
 Here you have to use `-c` flag in order to create files and folders as you described inside patl.json
 ```cmd
     path/to/patl.json> patl -c
 ```
 
-### To Remove Project Layout
-============================
-
+## To Remove Project Layout
+===
 Here you have to use `-r` flag in order to remove files and folders as you described inside patl.json
 ```cmd
     path/to/patl.json> patl -r
 ```
-
-
-Links
------
-
--   Releases: https://pypi.org/Ajay1290/patl/
--   Code: https://github.com/Ajay1290/patl
--   Issue tracker: https://github.com/Ajay1290/patl/issues
