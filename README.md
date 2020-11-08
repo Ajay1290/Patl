@@ -1,11 +1,10 @@
-# Patl
-==========
+# Patl 
 
 Patl is a Python package which helps you in creating a monitorable structure 
 for your files and folder for your next big project.
 
 ## Installing
-==============
+--------------
 
 Install and update using `pip`:
 
@@ -17,11 +16,11 @@ Install and update using `pip`:
 
 
 ## A Simple Example
-=====================
+---------------------
 
 In order to use patl you first have to create a patl.json file in your project's root area.
 
-Inside patal.json you have to structure your files and folder in such a perfect manner that 
+Inside patl.json you have to structure your files and folder in such a perfect manner that 
 how you wanted to arrange them and afterall we are all doing this is a JSON file we have to
 follow a certain kind of rules in order to structure our project.
 
@@ -29,11 +28,14 @@ follow a certain kind of rules in order to structure our project.
 
 - Each file's value must be null to recognize it as a file.
 
+```json
 e.g: 
     { "index.js" : null }
 
 ```
+
 - Each folder's value must be {} to recognize it as a folder.
+
 ``` json
 e.g:
     { 
@@ -47,7 +49,7 @@ After constructing your structure in patl.json file you have to open your termin
 change your current working directory to folder where patl.json file is located.
 
 ### To Create Project Layout
-=============================
+-----------------------------
 
 Here you have to use `-c` flag in order to create files and folders as you described inside patl.json
 ```cmd
@@ -55,7 +57,7 @@ Here you have to use `-c` flag in order to create files and folders as you descr
 ```
 
 ### To Remove Project Layout
-============================
+-----------------------------
 
 Here you have to use `-r` flag in order to remove files and folders as you described inside patl.json
 ```cmd
@@ -66,6 +68,6 @@ Here you have to use `-r` flag in order to remove files and folders as you descr
 Links
 -----
 
--   Releases: https://pypi.org/Ajay1290/patl/
+-   Releases: https://test.pypi.org/project/Patl/
 -   Code: https://github.com/Ajay1290/patl
 -   Issue tracker: https://github.com/Ajay1290/patl/issues
