@@ -6,6 +6,8 @@ from .utils import create_file
 from .utils import remove_folder
 from .utils import remove_file
 from .utils import change_dir
+from .utils import wite_to_file
+from .utils import _getDirs
 
 
 def create_dir(d):
@@ -52,7 +54,7 @@ def create_Alldirs():
     d = json.load(f)
     create_dir(d)
     f.close()
-    print("| All folders and files are created successfully.")
+    print("Patl> All folders and files are created successfully.")
 
 
 def remove_Alldirs():
@@ -61,4 +63,43 @@ def remove_Alldirs():
     d = json.load(f)
     remove_dir(d)
     f.close()
-    print("| All folders and files are removed successfully.")
+    print("Patl> All folders and files are removed successfully.")
+
+
+def getdirs(l, j=None, d=None, fresh=True):
+    """A Recrusive Fuction which scans folders and files.
+    
+    Parameters:
+    ===========
+    l : a list of dirs
+    j : old key goes here in second iter.
+    d : old dict goes here in second iter.
+    fresh : To Tell wheter recrusive is first time or not.
+    """
+    if fresh:
+        d = {}
+    else:
+        os.chdir(j)
+        a = {}
+    for i in l:
+        if fresh:
+            dir = _getDirs(i)
+            d[i] = dir
+            if dir:
+                getdirs(dir, i, d, False)
+                os.chdir('../')
+        else:
+            dir = _getDirs(i)
+            a[i] = dir
+            d[j] = a
+            if dir:
+                getdirs(dir, i, a, False)
+                os.chdir('../')
+    return d
+
+def scan_Alldirs():
+    """A Fuction which scans folders and files."""
+    l = os.listdir()
+    d = getdirs(l)
+    wite_to_file(d)
+    print("Patl> All folders and files are scanned successfully to patl.json.")
