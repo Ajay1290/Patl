@@ -1,7 +1,7 @@
 # Patl 
 
 Patl is a Python package which helps you in creating a monitorable structure 
-for your files and folder for your next big project.
+for your files and folder of your big project.
 
 ## Installing
 --------------
@@ -9,9 +9,7 @@ for your files and folder for your next big project.
 Install and update using `pip`:
 
 ```cmd
-
-    > pip install patl
-
+> pip install patl
 ```
 
 
@@ -47,6 +45,14 @@ e.g:
 
 After constructing your structure in patl.json file you have to open your terminal and 
 change your current working directory to folder where patl.json file is located.
+
+### To Scan Project Layout
+-----------------------------
+
+Here you have to use `-s` flag in order to scan files and folders and take it to patl.json file
+```cmd
+    path/to/patl.json> patl -s
+```
 
 ### To Create Project Layout
 -----------------------------

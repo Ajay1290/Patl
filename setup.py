@@ -9,7 +9,7 @@ setup(
     version=patl.version,
     author="Ajay Patil",
     author_email="ajay.patil.a01@gmail.com",
-    description="Patl helps you in creating a monitorable structure for your files and folder for your next big project.",
+    description="Patl helps you in creating a monitorable structure for your files and folder of your big project.",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/Ajay1290/patl",

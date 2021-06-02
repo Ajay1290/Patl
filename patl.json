@@ -1,0 +1,21 @@
+{
+    ".patlignore": null,
+    "LICENCE": null,
+    "README.md": null,
+    "dist": {
+        "Patl-0.0.1b0-py3-none-any.whl": null,
+        "Patl-0.0.1b0.tar.gz": null
+    },
+    "examples": {
+        "README.md": null,
+        "patl.json": null
+    },
+    "patl": {
+        "__init__.py": null,
+        "commands.py": null,
+        "core.py": null,
+        "utils.py": null
+    },
+    "patl.json": null,
+    "setup.py": null
+}

@@ -1,0 +1,6 @@
+venv/
+build/
+.git/
+__pycache__/
+Patl.egg-info/
+.gitignore

@@ -5,11 +5,10 @@
 __pycache__/
 *.pyc
 *.egg-info/
-/build/
-/dist/
 /.pytest_cache/
 /.tox/
 .coverage
 .coverage.*
 /htmlcov/
 /docs/_build/
+/Patl.egg-info/
